@@ -1,0 +1,191 @@
+/* input the google api fonts */
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap");
+
+* {
+  /* Supress browser defaults and select alt box model */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  --bg-primary: #fda7a7; /* White for a clean background */
+  --bg-secondary: rgb(253, 193, 115); /* Light grey for subtle contrast */
+  --font-color-primary: #333333; /* Dark grey for primary text */
+  --font-color-secondary: #555555; /* Medium grey for secondary text */
+  --accent-color: #007acc; /* Blue for accents and links */
+  --highlight-color: #ffcc00; /* Yellow for highlights */
+  --page-color: #f0f0f0; /* Light grey for the page background */
+  --hover: #54f135; /* Light grey for hover effects */
+  --texthover: #ee5454; /* Light grey for hover effects */
+}
+
+/* This styling is desktop first  */
+body {
+  height: 100vh;
+  background: var(--page-color);
+}
+
+/* Style the header / nav bar  */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Changed to space-between for better spacing */
+  height: 50px;
+  width: 100%; /* Ensure the navbar spans the full width */
+  padding: 0 30px; /* Adjust padding for better spacing */
+  background-color: var(
+    --accent-color
+  ); /* Add a background color for visibility */
+}
+
+/* Style the children of the header */
+
+.navbar nav {
+  color: var(--bg-secondary);
+  font-weight: 700;
+}
+
+.navbar nav table tr {
+  display: flex; /* Ensure the table row is displayed as flex */
+}
+
+.navbar nav table td {
+  margin-right: 20px; /* Add margin to the right of each list item */
+  background-color: var(--bg-primary);
+  color: var(--font-color-primary);
+  padding: 4px 14px; /* Shazam */
+  font-size: 16px; /* Shazam */
+  cursor: pointer;
+  border-radius: 6px; /* Shazam */
+  transition: background 0.3s ease;
+}
+
+/* the event that triggers line 60 and specify outcome of transition  */
+
+.navbar nav table td:hover {
+  color: var(--texthover);
+  background-color: var(--hover);
+}
+
+/* Styling the hero section  */
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  margin-top: 78px; /* Shazam */
+  padding: 0 300px; /* space between space evenly space around */
+}
+
+.main img {
+  width: 100%;
+  height: 100%; /* Shazam */
+  border-radius: 30%; /* Shazam */
+}
+
+.main p.quote {
+  color: var(--font-color-primary);
+  font-size: 16px; /* Shazam */
+  font-weight: 600; /* Shazam */
+  margin-top: 20px; /* Shazam */
+}
+
+/* Styling the hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero h3 {
+  color: var(--font-color-primary);
+  text-decoration: underline;
+}
+
+.hero span {
+  color: var(--font-color-primary);
+  font-size: 16px; /* Shazam */
+  margin-top: 20px; /* Shazam */
+  text-align: left;
+}
+
+.hero a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.hero a:hover {
+  color: var(--highlight-color);
+}
+
+/* Style for the section container */
+section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Style for the <progress> element */
+progress {
+  width: 50%;
+  height: 25px;
+  appearance: none;
+  margin-top: 20px;
+}
+section progress {
+  margin-top: 10px;
+}
+/* Style for WebKit browsers */
+progress::-webkit-progress-bar {
+  background-color: #ff0000;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #4caf50;
+  border-radius: 10px;
+}
+
+footer {
+  position: relative;
+  background: var(--accent-color);
+  padding: 80px 50px 40px;
+  margin-top: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .links {
+  display: flex;
+  gap: 20px;
+}
+
+footer .links a {
+  display: flex;
+  align-items: center;
+}
+
+footer .links img {
+  color: var(--bg-primary);
+  text-decoration: none;
+  border-radius: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .links img:hover {
+  color: var(--highlight-color);
+  transform: scale(1.5);
+}
+
+footer h5 {
+  color: var(--bg-primary);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 auto; /* Center horizontally */
+  align-self: center;
+  text-align: center; /* Ensure text is centered */
+  margin-left: auto;
+}

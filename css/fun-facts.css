@@ -1,0 +1,89 @@
+/* input the google api fonts */
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+
+  --bg-primary: #fda7a7; /* White for a clean background */
+  --bg-secondary: rgb(253, 193, 115); /* Light grey for subtle contrast */
+  --font-color-primary: #333333; /* Dark grey for primary text */
+  --font-color-secondary: #555555; /* Medium grey for secondary text */
+  --accent-color: #007acc; /* Blue for accents and links */
+  --highlight-color: #ffcc00; /* Yellow for highlights */
+  --page-color: #f0f0f0; /* Light grey for the page background */
+  --hover: #54f135; /* Light grey for hover effects */
+  --texthover: #ee5454; /* Light grey for hover effects */
+}
+
+main {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Headings */
+h2 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+/* Audio */
+audio {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Links */
+a {
+  display: inline-block;
+  color: #2980b9;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+a:hover {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+/* Iframes */
+iframe {
+  align-items: center;
+  display: flex;
+  size: 100%;
+  border-radius: 8px;
+}
+
+/* Sections */
+.book,
+.audio,
+.tv {
+  margin-bottom: 40px;
+}
+
+hr {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}

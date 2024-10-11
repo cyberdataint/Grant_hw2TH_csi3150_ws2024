@@ -1,0 +1,68 @@
+/* input the google api fonts */
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+
+  --bg-primary: #fda7a7; /* White for a clean background */
+  --bg-secondary: rgb(253, 193, 115); /* Light grey for subtle contrast */
+  --font-color-primary: #333333; /* Dark grey for primary text */
+  --font-color-secondary: #555555; /* Medium grey for secondary text */
+  --accent-color: #007acc; /* Blue for accents and links */
+  --highlight-color: #ffcc00; /* Yellow for highlights */
+  --page-color: #f0f0f0; /* Light grey for the page background */
+  --hover: #54f135; /* Light grey for hover effects */
+  --texthover: #ee5454; /* Light grey for hover effects */
+}
+
+main {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 1.8;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* Paragraphs */
+li,
+td {
+  font-size: 1.1;
+  line-height: 1.6;
+}
+
+table {
+  width: 100%;
+  margin: 20px 0;
+  font-size: 1.1;
+}
+
+th,
+td {
+  text-align: left;
+}
+
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-indent: 5px;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--bg-primary);
+}
