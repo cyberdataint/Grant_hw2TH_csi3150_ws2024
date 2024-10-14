@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap");
 
 * {
-  /* Supress browser defaults and select alt box model */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
+
   --bg-primary: #fda7a7; /* White for a clean background */
   --bg-secondary: rgb(253, 193, 115); /* Light grey for subtle contrast */
   --font-color-primary: #333333; /* Dark grey for primary text */
@@ -18,10 +18,11 @@
   --texthover: #ee5454; /* Light grey for hover effects */
 }
 
-/* This styling is desktop first  */
 body {
-  height: 100vh;
+min-height: 100vh; /* Ensures the body takes the full viewport height */
+
   background: var(--page-color);
+
 }
 
 /* Style the header / nav bar  */
@@ -40,12 +41,12 @@ body {
 /* Style the children of the header */
 
 .navbar nav {
-  color: var(--bg-secondary);
+  color: var(--bg-primary);
   font-weight: 700;
 }
 
 .navbar nav table tr {
-  display: flex; /* Ensure the table row is displayed as flex */
+  display: flex;
 }
 
 .navbar nav table td {
@@ -73,8 +74,17 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 70px;
-  margin-top: 78px; /* Shazam */
+ margin-bottom: 75px; /* Shazam */
+  margin-top: 78px; /* Shazam */ /* Shazam */
   padding: 0 300px; /* space between space evenly space around */
+
+}
+main {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 .main img {
@@ -151,11 +161,14 @@ progress::-webkit-progress-value {
 footer {
   position: relative;
   background: var(--accent-color);
+
+  width: 100%;
   padding: 80px 50px 40px;
-  margin-top: 75px;
+  margin-top: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
+
 }
 
 footer .links {
@@ -188,4 +201,5 @@ footer h5 {
   align-self: center;
   text-align: center; /* Ensure text is centered */
   margin-left: auto;
+
 }
